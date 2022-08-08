@@ -1,0 +1,234 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+     height: 100vh;
+     width: 100vw;
+     background-image: url(../images/bckimg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.links{
+     height: 10%;
+}
+nav{
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     text-align: center;
+}
+
+nav li{
+     display: inline;
+}
+nav a{
+     display: inline-block;
+     padding: 10px;
+     text-decoration: none;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 20px;
+     color: white;
+     text-shadow: 1px 1px 2px black;
+}
+
+main{
+     height: 80%;
+}
+
+.salonName{
+     display: flex;
+     height: 10%;
+     font-family: 'Great Vibes', cursive;
+     font-size: 36px;
+     color: rgb(212, 230, 238);
+     align-items:center;
+     justify-content:center;
+}
+
+.mainDisplay{
+     height: 90%;
+     display: flex;
+     align-items:center;
+     justify-content: center;
+     
+}
+
+.infoDisplay{   
+     height: 80%;
+     width: 60%; 
+     display: flex; 
+     flex-direction: row;
+}
+
+.infoDisplay > *{
+     flex-basis: 100%;
+}
+
+.about{
+     height: 100%;
+     display: flex;  
+}
+.aboutUsLeft{
+     width: 50%;
+}
+.aboutUsPicture {
+     width: 100%;
+     height: 100%;
+}
+
+.aboutUsRight{
+     width: 50%;
+     padding: 20px 60px;
+     font-size: 24px;
+     text-align: center;
+     color: white;
+     background-color: rgb(0, 14, 90);
+     opacity: 0.5;
+}
+
+
+.servicesMain{
+     height: 100%;
+     display: flex; 
+     flex-wrap: wrap;  
+     background-color: rgb(0, 14, 90);
+     opacity: 0.6;
+}
+.servicesLeft1{
+     padding: 20px 60px;
+     height: 50%;
+     width: 50%;
+     font-size: 14px;
+     text-align: center;
+     color: white;
+}
+.servicesLeft2{
+     padding: 20px 60px;
+     height: 50%;
+     width: 50%;
+     font-size: 14px;
+     text-align: center;
+     color: white;
+}
+.servicesRight1{
+     padding: 20px 60px;
+     height: 50%;
+     width: 50%;
+     font-size: 14px;
+     text-align: center;
+     color: white;
+}
+.servicesRight2{
+     padding: 20px 60px;
+     height: 50%;
+     width: 50%;
+     font-size: 14px;
+     text-align: center;
+     color: white;
+}
+
+.galleryMain{
+     height: 100%;
+     display: flex;
+}
+
+
+.galleryLeft{
+     width: 30%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     flex-wrap: wrap;
+     align-content: center;
+     opacity: 0.5;
+     
+}
+
+.models{
+     height: 90px;
+     width: 90px;
+     opacity: 0.5;
+     border: 2px solid rgb(223, 216, 216);
+}   
+
+.models:hover {
+     opacity: 1.0;
+}
+
+.galleryRight{
+     width: 70%;
+     background-image: url(../images/gallerybckimg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+
+.contactUs{
+     height: 100%;
+     width: 100%;
+     display: flex;   
+}
+.contactLeft{
+     width: 50%;
+}
+.map{
+     width: 100%;
+     height: 100%;
+}
+
+.contactRight{
+     width: 50%;
+     font-size: 20px;
+     text-align: center;
+     color: white;
+     background-color: rgb(0, 14, 90);
+     opacity: 0.5;
+}
+
+
+.mainAbout{
+     display: none;
+}
+
+.mainServices{
+     display: none;
+}
+
+.mainGallery{
+     display: none;
+}
+
+.mainContact{
+     display: none;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
